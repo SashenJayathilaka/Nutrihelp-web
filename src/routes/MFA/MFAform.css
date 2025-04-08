@@ -1,50 +1,126 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    
-  }
-.mfa{
-  margin-top: 50px;
-  margin-bottom: 20px;
-  text-align: center;
+.mfa-auth-wrapper {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #f6f3ff, #fcefff, #f8f3ff);
+  background-size: 300% 300%;
+  animation: subtleShift 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
-.mfa-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    height: 100vh;
-    position: relative; /* Added for button positioning */
+ 
+@keyframes subtleShift {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .mfa-input-container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .mfa-input {
-   
-    width: 50px;
-    height: 50px;
-    margin: 0 5px;
-    text-align: center;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .mfa-submit-button {
-    position: absolute; /* Position button relative to parent container */
-    top: 421px; /* Y position */
-    left: 664px; /* X position */
-    padding: 10px 20px;
-    background-color: #ae00ff;
-    color: #fff;
-    border: none;
-    border-radius: 50px;  /* Curved corners for better look */
-    cursor: pointer;
-  }
-  
-  .mfa-submit-button:hover {
-    background-color: #0056b3;
-  }
-  
+}
+ 
+.mfa-card-container {
+  background-color: #ffffff !important;
+  padding: 48px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  max-width: 520px;
+  width: 100%;
+}
+ 
+.mfa-auth-card {
+  background: transparent;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+ 
+.mfa-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+  font-family: 'Segoe UI', sans-serif;
+}
+ 
+.mfa-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+ 
+.mfa-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+ 
+.mfa-input {
+  width: 56px;
+  height: 56px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  background-color: #ffffff;
+  color: #111;
+  transition: 0.25s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+ 
+.mfa-input:focus {
+  border-color: #6366f1;
+  background-color: #f5f3ff;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
+  outline: none;
+}
+ 
+.mfa-submit-button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+  margin-top: 8px;
+}
+ 
+.mfa-submit-button:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+ 
+.resend-text {
+  font-size: 14px;
+  color: #555;
+  margin-top: 16px;
+}
+ 
+.resend-link {
+  background: transparent;
+  border: none;
+  font-weight: 550;
+  color: #6366f1;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  user-select: none;
+}
+ 
+.resend-status {
+  margin-top: 10px;
+  font-size: 13px;
+}
