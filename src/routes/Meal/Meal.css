@@ -1,88 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
 
-  header {
-    background-color: #caa3e1;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  input {
-    padding: 8px;
-    margin-right: 8px;
-  }
-  
+header {
+  background-color: #caa3e1;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
 
-  .menuContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    width: 100%;
-    
-    /* float: left;  */
-    /* flex-direction: left; */
-  }
+header h1 {
+  margin: 0;
+}
 
-  /* #menuContainer2 {
+input {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.menuContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  width: 100%;
+
+  /* float: left;  */
+  /* flex-direction: left; */
+}
+
+/* #menuContainer2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
   } */
 
-  .food-item img {
-    margin: auto;
+.food-item img {
+  margin: auto;
 }
 
 .food-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    height: auto;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: auto;
 }
 
 .names {
-    width: 100%;
-    text-align: center; /* Align text horizontally to the left */
-    /* background-color: #caa3e1; */
-    font-size: 150%;
+  width: 100%;
+  text-align: center; /* Align text horizontally to the left */
+  /* background-color: #caa3e1; */
+  font-size: 150%;
 }
 
-  .mealcontainer {
-    display: flex;
-    justify-content: space-around; /* To space the two main sections evenly */
+.mealcontainer {
+  display: flex;
+  justify-content: space-around; /* To space the two main sections evenly */
 }
 
 .details-container {
-    width: 30%;
-    padding: 20px;
-    box-sizing: border-box; /* Include padding in the width calculation */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .details-box {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .viewplan {
@@ -92,32 +89,33 @@ body {
   margin-top: 20px;
   border: none;
   background-color: #caa3e1;
-  color: #3E3E3E;
+  color: #3e3e3e;
   font-size: 16px;
   border-radius: 50px;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
 
-.viewplan:hover{
-color: white;
-background: #8531ce;
+.viewplan:hover {
+  color: white;
+  background: #8531ce;
 }
-h3{
-  margin-left: 30px; font-size: 20px;
+h3 {
+  margin-left: 30px;
+  font-size: 20px;
 }
 .selected {
   border: 2px solid rgb(40, 40, 65); /* Add a blue border when item is selected */
   box-shadow: 5px 14px 14px 5px rgba(33, 7, 124, 0.1);
   background-color: aliceblue;
 }
-.heading{
+.heading {
   cursor: pointer;
   background-color: #caa3e1;
-  width:10%;
+  width: 10%;
   text-align: center;
   border-radius: 20px;
-  padding:5px;
+  padding: 5px;
 }
 /* h3{
   background-color: #caa3e1;

@@ -42,26 +42,27 @@ const Login = () => {
         setCurrentUser(data.user, expirationTimeInMillis);
 
         // Toast message
-        toast.success("💧 Welcome back! Don’t forget to check your meal plan & track your water intake!", {
-          position: "top-right",
-          autoClose: false, // stays until dismissed
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          hideProgressBar: false,
-          theme: "colored", // makes it vibrant
-          style: {
-            fontSize: "1.1rem",
-            fontWeight: "bold",
-            padding: "1.2rem",
-            borderRadius: "10px",
-            boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
-            backgroundColor: "#d1f0ff", // optional custom color
-            color: "#0d47a1",
-          },
-        });
-        
-        
+        toast.success(
+          "💧 Welcome back! Don’t forget to check your meal plan & track your water intake!",
+          {
+            position: "top-right",
+            autoClose: false, // stays until dismissed
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            hideProgressBar: false,
+            theme: "colored", // makes it vibrant
+            style: {
+              fontSize: "1.1rem",
+              fontWeight: "bold",
+              padding: "1.2rem",
+              borderRadius: "10px",
+              boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
+              backgroundColor: "#d1f0ff", // optional custom color
+              color: "#0d47a1",
+            },
+          }
+        );
 
         // Delay navigation so toast shows first
         setTimeout(() => {
@@ -98,7 +99,9 @@ const Login = () => {
               alt="Nutrihelp Logo"
               className="rounded-xl w-[500px] mx-auto"
             />
-            <h2 className={`font-bold text-4xl mt-4 ${darkMode && "text-white"}`}>
+            <h2
+              className={`font-bold text-4xl mt-4 ${darkMode && "text-white"}`}
+            >
               LOG IN
             </h2>
             <p className="text-lg text-center text-gray-500">

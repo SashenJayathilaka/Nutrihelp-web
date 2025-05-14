@@ -1,40 +1,39 @@
 /* Common Properties */
 .form-div {
-    display: flex;
-    margin-left: 20px;
+  display: flex;
+  margin-left: 20px;
 }
 
-
 .annotated-text-div {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .min-max-div {
-    display: flex;
-    text-align: right;
+  display: flex;
+  text-align: right;
 }
 
 .min-max-div input {
-    width: 150px;
+  width: 150px;
 }
 
 /* Radio Button Properties */
 .form {
-    display: flex;
-    margin-left: 20px;
+  display: flex;
+  margin-left: 20px;
 }
 
 .form div {
-    display: flex;
+  display: flex;
 }
 
 .radio-buttons-div {
-    margin-left: 50px;
-    width: 20%;
-    justify-content: space-around;
+  margin-left: 50px;
+  width: 20%;
+  justify-content: space-around;
 }
 
 .browse-and-upload-buttons-div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
