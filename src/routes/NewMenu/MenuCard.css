@@ -1,5 +1,5 @@
 .cards-container {
-  display: flex; 
+  display: flex;
   margin: 20px;
 }
 
@@ -35,16 +35,16 @@
 }
 
 .menucard-body h5 {
-  margin: 10px; 
+  margin: 10px;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
 }
 
 .menucard-body p {
-  overflow-y: auto; 
-  flex-grow: 1; 
-  margin: 0; 
+  overflow-y: auto;
+  flex-grow: 1;
+  margin: 0;
 }
 
 .menucard-footer {
@@ -55,7 +55,7 @@
 .menucard-footer a {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #E893CF;
+  background-color: #e893cf;
   color: white;
   text-decoration: none;
   border-radius: 20px;

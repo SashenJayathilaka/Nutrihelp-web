@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../context/user.context";
 import { useDarkMode } from "../routes/DarkModeToggle/DarkModeContext";
@@ -34,13 +34,13 @@ const MainNavbar = () => {
       }`}
     >
       <nav>
-        <div className="flex justify-between items-center pr-8 tts-ignore">
+        <div className="flex justify-between items-center m-auto gap-x-6 pr-8 tts-ignore w-full">
           <div className="">
             <img src="/images/logo.png" alt="Website Logo" className="logo" />
           </div>
 
           <div className="nav-links">
-            {currentUser ? (
+            {currentUser ? ( //need to change
               <>
                 <Link className="link nav-link" to="/dashboard">
                   Menu
@@ -127,10 +127,12 @@ const MainNavbar = () => {
                 <Link>
                   <DarkModeToggle />
                 </Link>
-                <TextToSpeech />
-                <VoiceNavigation />
-                {/* Included from master branch */}
+                <div className="flex justify-center items-center m-auto">
+                  <TextToSpeech />
+                  <VoiceNavigation />
+                </div>
 
+                {/* Included from master branch */}
               </>
             )}
           </div>

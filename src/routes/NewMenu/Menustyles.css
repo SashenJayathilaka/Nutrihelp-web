@@ -9,7 +9,6 @@ body {
   font-family: sans-serif;
 }
 
-
 .headerlogoedit {
   padding-left: 5%;
 }
@@ -100,7 +99,7 @@ h3 {
 .selected-recipe-box {
   border-radius: 10px;
   border: 1px solid #c282de;
-  padding: 20px 25px; 
+  padding: 20px 25px;
   margin-bottom: 15px;
 }
 
@@ -137,7 +136,7 @@ h3 {
 
 /*.mainBox button {
   padding: 15px 30px; /* Increased size */
-  /*background-color: #ba49e7;
+/*background-color: #ba49e7;
   color: white;
   border: none;
   border-radius: 50px;
@@ -152,38 +151,38 @@ h3 {
 
 /* Adding this block for Book an Appointment button */
 .appointment-btn {
-  position: absolute; 
-  right: 20px; 
-  top: 90px; 
-  background-color: #ba49e7; 
-  color: white; 
-  border: none; 
-  border-radius: 50px; 
-  padding: 15px 30px; 
-  font-size: 16px; 
-  cursor: pointer; 
+  position: absolute;
+  right: 20px;
+  top: 90px;
+  background-color: #ba49e7;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
   z-index: 100; /* Ensure it appears above other elements */
   white-space: nowrap; /* Prevent text wrapping */
 }
 
 .appointment-btn:hover {
-  background-color: #8b06c0; 
+  background-color: #8b06c0;
 }
 
-@media (max-width: 768px) { /* For smaller screens */
+@media (max-width: 768px) {
+  /* For smaller screens */
   .appointment-btn {
     position: fixed; /* Keep the button visible in the viewport */
-    bottom: 20px; 
-    right: 20px; 
+    bottom: 20px;
+    right: 20px;
   }
 }
 
 .dashboard-grid {
   display: flex;
-    width: 100%;
-    justify-content: space-around;
+  width: 100%;
+  justify-content: space-around;
 }
-
 
 .dashboard-grid-2 {
   width: 80%;
@@ -192,94 +191,12 @@ h3 {
 
 nav a {
   padding: 10px 20px;
-  text-decoration: none;  
-  color: #000;          
-
+  text-decoration: none;
+  color: #000;
 }
-
-
-.breakfast-btn{
-  background: #F5EEE6;
-  padding-top: 10px;
-  text-align: center;
-  color: #000000;
-  border-radius: 30px 30px 0px 0px;
-  height: 50px;
-  margin-right: 1px;
-  width: 10em;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.lunch-btn{
-  background: #F3D7CA;
-  padding-top: 10px;
-  text-align: center;
-  color: #000000;
-  border-radius: 30px 30px 0px 0px;
-  height: 50px;
-  margin-right: 1px;
-  width: 10em;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.dinner-btn{
-  background: #E6A4B4;
-  padding-top: 10px;
-  text-align: center;
-  color: #000000;
-  border-radius: 30px 30px 0px 0px;
-  height: 50px;
-  margin-right: 1px;
-  width: 10em;
-  display: inline-block;
-  font-size: 16px;
-}
-
-nav > a::before {
-  border: none;
-}
-
-nav a.active::before {
-  background-color: #000000;
-  margin-bottom: 0;
-
-}
-
-nav a.active {
-  color: #000000; 
-  font-family: sans-serif;
-  font-weight: bold; 
-  color: #000000; 
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5); 
-  font-size: 18px;
-  
-}
-
-.tab-underline {
-  position: absolute;
-  bottom: 0; 
-  left: 0;
-  width: 1500px;
-  height: 10px; 
-  background: #F8E7FF; 
-  border-radius: 0 5px 5px 0; 
-  margin: 0 -.3em;
-  z-index: 1; 
-}
-
-
-nav a {
-  padding: 10px 20px;
-  text-decoration: none;  
-  color: #000;          
-
-}
-
 
 .breakfast-btn {
-  background: #F5EEE6;
+  background: #f5eee6;
   padding-top: 10px;
   text-align: center;
   color: #000000;
@@ -291,8 +208,8 @@ nav a {
   font-size: 16px;
 }
 
-.lunch-btn{
-  background: #F3D7CA;
+.lunch-btn {
+  background: #f3d7ca;
   padding-top: 10px;
   text-align: center;
   color: #000000;
@@ -304,8 +221,8 @@ nav a {
   font-size: 16px;
 }
 
-.dinner-btn{
-  background: #E6A4B4;
+.dinner-btn {
+  background: #e6a4b4;
   padding-top: 10px;
   text-align: center;
   color: #000000;
@@ -324,17 +241,15 @@ nav > a::before {
 nav a.active::before {
   background-color: #000000;
   margin-bottom: 0;
-
 }
 
 nav a.active {
-  color: #000000; 
+  color: #000000;
   font-family: sans-serif;
-  font-weight: bold; 
-  color: #000000; 
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5); 
+  font-weight: bold;
+  color: #000000;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 18px;
-  
 }
 
 .tab-underline {
@@ -343,11 +258,85 @@ nav a.active {
   left: 0;
   width: 1500px;
   height: 10px;
-  background: #F8E7FF;
+  background: #f8e7ff;
   border-radius: 0 5px 5px 0;
-  margin: 0 -.3em;
+  margin: 0 -0.3em;
   z-index: 1;
-  
+}
+
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.breakfast-btn {
+  background: #f5eee6;
+  padding-top: 10px;
+  text-align: center;
+  color: #000000;
+  border-radius: 30px 30px 0px 0px;
+  height: 50px;
+  margin-right: 1px;
+  width: 10em;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.lunch-btn {
+  background: #f3d7ca;
+  padding-top: 10px;
+  text-align: center;
+  color: #000000;
+  border-radius: 30px 30px 0px 0px;
+  height: 50px;
+  margin-right: 1px;
+  width: 10em;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.dinner-btn {
+  background: #e6a4b4;
+  padding-top: 10px;
+  text-align: center;
+  color: #000000;
+  border-radius: 30px 30px 0px 0px;
+  height: 50px;
+  margin-right: 1px;
+  width: 10em;
+  display: inline-block;
+  font-size: 16px;
+}
+
+nav > a::before {
+  border: none;
+}
+
+nav a.active::before {
+  background-color: #000000;
+  margin-bottom: 0;
+}
+
+nav a.active {
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #000000;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+.tab-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1500px;
+  height: 10px;
+  background: #f8e7ff;
+  border-radius: 0 5px 5px 0;
+  margin: 0 -0.3em;
+  z-index: 1;
 }
 
 .nav-links {

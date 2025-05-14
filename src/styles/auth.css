@@ -9,10 +9,10 @@ display-flex,
   display: -webkit-flex;
 }
 
-input,
-select,
-textarea,
-select {
+input:not(#no-bg, #file-upload),
+select:not(#no-bg),
+textarea:not(#no-bg),
+select:not(#no-bg) {
   border-radius: 20px;
   padding: 50px;
   outline: none;
@@ -23,7 +23,7 @@ select {
   -ms-appearance: unset !important;
 }
 
-input[type="checkbox"] {
+input:not(#no-bg, #file-upload)[type="checkbox"] {
   appearance: checkbox !important;
   -moz-appearance: checkbox !important;
   -webkit-appearance: checkbox !important;
@@ -44,13 +44,13 @@ figure {
   margin: 0;
 }
 
-p {
+p:not(#no-bg) {
   margin-bottom: 0px;
   font-size: 15px;
   color: #777;
 }
 
-h2 {
+h2:not(#no-bg) {
   line-height: 1.66;
   margin: 0;
   padding: 0;
@@ -219,7 +219,7 @@ figure {
   height: 25px;
 }
 
-.switch input {
+.switch input:not(#no-bg, #file-upload) {
   opacity: 1;
   width: 0;
   height: 0;
@@ -252,12 +252,12 @@ figure {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:not(#no-bg, #file-upload):checked + .slider {
   background-color: #a654dd;
   border: 1px solid transparent;
 }
 
-input:checked + .slider:before {
+input:not(#no-bg, #file-upload):checked + .slider:before {
   transform: translateX(1.8em);
 }
 
@@ -394,8 +394,8 @@ input:checked + .slider:before {
   margin-bottom: 0px;
 }
 
-input,
-select {
+input:not(#no-bg, #file-upload),
+select:not(#no-bg) {
   width: 100%;
   display: block;
   border: none;
@@ -408,43 +408,55 @@ select {
   font-weight: normal !important;
 }
 
-input::-webkit-input-placeholder {
+input:not(#no-bg, #file-upload)::-webkit-input:not(
+    #no-bg,
+    #file-upload
+  )-placeholder {
   color: #999;
 }
 
-input::-moz-placeholder {
+input:not(#no-bg, #file-upload)::-moz-placeholder {
   color: #999;
 }
 
-input:-ms-input-placeholder {
+input:not(#no-bg, #file-upload):-ms-input:not(
+    #no-bg,
+    #file-upload
+  )-placeholder {
   color: #999;
 }
 
-input:-moz-placeholder {
+input:not(#no-bg, #file-upload):-moz-placeholder {
   color: #999;
 }
 
-input:focus {
+input:not(#no-bg, #file-upload):focus {
   border-bottom: 1px solid #222;
 }
 
-input:focus::-webkit-input-placeholder {
+input:not(#no-bg, #file-upload):focus::-webkit-input:not(
+    #no-bg,
+    #file-upload
+  )-placeholder {
   color: #222;
 }
 
-input:focus::-moz-placeholder {
+input:not(#no-bg, #file-upload):focus::-moz-placeholder {
   color: #222;
 }
 
-input:focus:-ms-input-placeholder {
+input:not(#no-bg, #file-upload):focus:-ms-input:not(
+    #no-bg,
+    #file-upload
+  )-placeholder {
   color: #222;
 }
 
-input:focus:-moz-placeholder {
+input:not(#no-bg, #file-upload):focus:-moz-placeholder {
   color: #222;
 }
 
-input[type="checkbox"]:not(old) {
+input:not(#no-bg, #file-upload)[type="checkbox"]:not(old) {
   width: 2em;
   margin: 0;
   padding: 0;
@@ -452,13 +464,13 @@ input[type="checkbox"]:not(old) {
   display: none;
 }
 
-input[type="checkbox"]:not(old) + label {
+input:not(#no-bg, #file-upload)[type="checkbox"]:not(old) + label {
   display: inline-block;
   line-height: 1.5em;
   margin-top: 6px;
 }
 
-input[type="checkbox"]:not(old) + label > span {
+input:not(#no-bg, #file-upload)[type="checkbox"]:not(old) + label > span {
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -479,7 +491,9 @@ input[type="checkbox"]:not(old) + label > span {
   vertical-align: bottom;
 }
 
-input[type="checkbox"]:not(old):checked + label > span {
+input:not(#no-bg, #file-upload)[type="checkbox"]:not(old):checked
+  + label
+  > span {
   background-image: -moz-linear-gradient(white, white);
   background-image: -ms-linear-gradient(white, white);
   background-image: -o-linear-gradient(white, white);
@@ -487,7 +501,9 @@ input[type="checkbox"]:not(old):checked + label > span {
   background-image: linear-gradient(white, white);
 }
 
-input[type="checkbox"]:not(old):checked + label > span:before {
+input:not(#no-bg, #file-upload)[type="checkbox"]:not(old):checked
+  + label
+  > span:before {
   content: "\f26b";
   display: block;
   color: #222;
@@ -834,12 +850,12 @@ h4 {
   box-shadow: -4px 0 6px -4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1:not(#no-bg) {
   font-family: "Montserrat", "sans-serif";
   margin-top: 40%;
 }
 
-h2 {
+h2:not(#no-bg) {
   font-family: "Montserrat", "sans-serif";
   font-size: 40px;
   text-align: center;
@@ -888,7 +904,7 @@ h3 {
   margin-left: 15%;
 }
 
-form {
+form:not(#no-bg) {
   text-align: left;
   font-family: "Montserrat", "sans-serif";
 }
@@ -899,7 +915,7 @@ label {
   color: #333;
 }
 
-input {
+input:not(#no-bg, #file-upload) {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;

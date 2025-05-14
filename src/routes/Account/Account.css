@@ -1,87 +1,87 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    color: #444444;
+  font-family: "Montserrat", sans-serif;
+  color: #444444;
 }
 
 a {
-    text-decoration: none;
-    color: #49b5e7;
+  text-decoration: none;
+  color: #49b5e7;
 }
 
 a:hover {
-    color: #76c7ed;
-    text-decoration: none;
+  color: #76c7ed;
+  text-decoration: none;
 }
 
-h1,
+h1:not(#no-bg),
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #account {
-    width: 100%;
-    height: calc(100vh - 78px);
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: #bd49e7 #fff;
+  width: 100%;
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #bd49e7 #fff;
 }
 
 .account,
 .titleInput {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.account>.title {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    transition: all 0.3s ease-in-out;
+.account > .title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
 }
 
-.account>.title:hover {
-    color: #bd49e7;
+.account > .title:hover {
+  color: #bd49e7;
 }
 
 .account .message {
-    display: flex;
+  display: flex;
 }
 
 .account .message .left,
 .account .message .right {
-    width: 30%;
-    cursor: default;
-    transition: all 0.3s ease-in-out;
+  width: 30%;
+  cursor: default;
+  transition: all 0.3s ease-in-out;
 }
 
 .account .message .left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .account .message .right {
-    overflow: hidden;
-    max-height: 25px;
+  overflow: hidden;
+  max-height: 25px;
 }
 
-.account .message:hover>.left {
-    background: #bd49e7;
-    color: #ebf7fc;
+.account .message:hover > .left {
+  background: #bd49e7;
+  color: #ebf7fc;
 }
 
-.account:hover .message>.right {
-    width: 70%;
-    max-height: 1000px;
+.account:hover .message > .right {
+  width: 70%;
+  max-height: 1000px;
 }
 
 .section-bg {
-    background-color: #f4fbfe;
+  background-color: #f4fbfe;
 }
